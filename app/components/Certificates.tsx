@@ -27,7 +27,7 @@ export default function Certificates() {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
 
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
         <>
