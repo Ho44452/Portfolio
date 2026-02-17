@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Singpha Backhoepart E-Commerce",
         description:
-            "A clean, intuitive e-commerce application with drag-and-drop functionality, filtering, and real-time updates.",
+            "ระบบจัดการร้านค้าออนไลน์สำหรับขายอะไหล่รถขุด ออกแบบมาให้ใช้งานง่ายสำหรับผู้ดูแลระบบและลูกค้า",
         tags: ["PHP", "Tailwind CSS", "MySQL", "JavaScript", "HTML5", "Sweetalert2"],
         link: "https://singpha.comatcproject.com",
     },
