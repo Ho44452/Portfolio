@@ -42,7 +42,7 @@ export default function About() {
                             <div className="absolute -inset-8 rounded-full border border-gray-50" />
                             <div className="flex h-56 w-56 items-center justify-center rounded-full bg-gray-50">
                                 <img
-                                    src="https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/563999752_2159525777906503_796061261744362103_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=r8Ukzy85_WUQ7kNvwHiJ-BF&_nc_oc=AdnhulnMtavZfaajkXVOYsBb6Zuwl7UhZU6MOKA3asCwqAPR5Ej6THlKQBQwYjdPhz-061pvV7Z-N5AKkrudGyYl&_nc_zt=23&_nc_ht=scontent.fbkk5-3.fna&_nc_gid=ycAY0YgODT-c8uJRnwfe3Q&oh=00_AfunS80thJ1LZ0MtYbgUecHImkc_5bDE0JwdklFMZjNfYg&oe=699A50A2"
+                                    src="/images/563999752_2159525777906503_796061261744362103_n.jpg"
                                     alt="Nitithorn"
                                     className="h-48 w-48 rounded-full object-cover shadow-lg"
                                 />
