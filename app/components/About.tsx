@@ -36,17 +36,46 @@ export default function About() {
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="flex justify-center"
                     >
-                        <div className="relative">
-                            {/* Decorative rings */}
-                            <div className="absolute -inset-4 rounded-full border border-gray-100" />
-                            <div className="absolute -inset-8 rounded-full border border-gray-50" />
-                            <div className="flex h-56 w-56 items-center justify-center rounded-full bg-gray-50">
-                                <img
-                                    src="/images/563999752_2159525777906503_796061261744362103_n.jpg"
-                                    alt="Nitithorn"
-                                    className="h-48 w-48 rounded-full object-cover shadow-lg"
-                                />
+                        <div className="relative flex items-center justify-center">
+
+                            {/* Outer ambient glow */}
+                            <div className="absolute h-72 w-72 rounded-full bg-gradient-to-br from-indigo-100/60 via-purple-50/40 to-transparent blur-2xl" />
+
+                            {/* Spinning dashed ring */}
+                            <motion.div
+                                animate={{ rotate: 360 }}
+                                transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+                                className="absolute h-72 w-72 rounded-full border border-dashed border-indigo-200/60"
+                            />
+
+                            {/* Static decorative rings */}
+                            <div className="absolute h-64 w-64 rounded-full border border-gray-200/80" />
+                            <div className="absolute h-60 w-60 rounded-full border border-gray-100/60" />
+
+                            {/* Counter-spinning accent arc */}
+                            <motion.div
+                                animate={{ rotate: -360 }}
+                                transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
+                                className="absolute h-56 w-56 rounded-full border-t-2 border-r-2 border-indigo-300/50 border-b-transparent border-l-transparent"
+                            />
+
+                            {/* Avatar container with gradient ring */}
+                            <div className="relative h-52 w-52 rounded-full p-[3px] bg-gradient-to-br from-indigo-300 via-purple-200 to-pink-200 shadow-xl shadow-indigo-100/50">
+                                <div className="h-full w-full rounded-full overflow-hidden bg-white">
+                                    <img
+                                        src="/images/563999752_2159525777906503_796061261744362103_n.jpg"
+                                        alt="Nitithorn"
+                                        className="h-full w-full object-cover"
+                                    />
+                                </div>
                             </div>
+
+                            {/* Subtle pulse ring */}
+                            <motion.div
+                                animate={{ scale: [1, 1.08, 1], opacity: [0.4, 0, 0.4] }}
+                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                className="absolute h-52 w-52 rounded-full border border-indigo-300/40"
+                            />
                         </div>
                     </motion.div>
 
@@ -58,7 +87,8 @@ export default function About() {
                         className="space-y-5"
                     >
                         <p className="text-lg leading-relaxed text-gray-600">
-                            สวัสดีครับ ผมชื่อนายนิติธร เป็นนักศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง จากวิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล
+                            สวัสดีครับ ผมชื่อนายนิติธร เป็นนักศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง
+                            จากวิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล
                         </p>
                         <p className="text-lg leading-relaxed text-gray-600">
                             ตอนนี้ผมกำลังหาประสบการณ์และพัฒนาทักษะของตัวเองอยู่เสมอโดยการนำ AI มาประยุคใช้ให้เกิดประโยชน์สูงสุด

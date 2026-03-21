@@ -20,6 +20,14 @@ const certificates = [
             "ทักษะการเขียนโปรแกรม ระดับปวส โดยใช้ C++",
         image: "/images/certificate2.jpg",
     },
+    {
+        title: "ประกาศนียบัตรทักษะการเขียนโปรแกรมการแข่งขันทักษะวิชาชีพสิ่งประดิษฐ์และนวัตกรรม",
+        issuer: "Attawit Commercial Technology College",
+        date: "2025",
+        description:
+            "นำเสนอโปรเจค E-Commerce ที่พัฒนาโดยใช้ PHP เป็นหลัก",
+        image: "/images/certificate2025.jpg",
+    },
 ];
 
 export default function Certificates() {
@@ -134,7 +142,7 @@ export default function Certificates() {
                             src={selectedImage}
                             alt="Certificate Full View"
                             className="max-h-[90vh] max-w-full rounded-lg object-contain shadow-2xl"
-                            onClick={(e) => e.stopPropagation()} // ป้องกันไม่ให้คลิกที่รูปแล้วปิด Modal
+                            onClick={(e) => e.stopPropagation()}
                         />
                     </motion.div>
                 )}
