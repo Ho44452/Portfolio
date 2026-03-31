@@ -11,6 +11,13 @@ const projects = [
         tags: ["PHP", "Tailwind CSS", "MySQL", "JavaScript", "HTML5", "Sweetalert2"],
         link: "https://singpha.comatcproject.com",
     },
+    {
+        title: "High Hearth Jewelry",
+        description:
+            "Landing Page สำหรับร้านเครื่องประดับ High Hearth Jewelry ออกแบบมาให้สวยงามและทันสมัย",
+        tags: ["HTML5", "CSS", "JavaScript", "Bootstrap", "Swiper"],
+        link: "https://highheart-landingpages.web.app/",
+    },
 ];
 
 export default function Projects() {
